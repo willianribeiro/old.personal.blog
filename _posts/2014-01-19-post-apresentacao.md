@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<article>
-	<h1>Primeiro post</h1>
+Primeiro post
 
-	<p>Este é o primeiro post !</p>
-</article>
+Este é o primeiro post !
