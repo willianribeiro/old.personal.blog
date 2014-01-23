@@ -6,43 +6,49 @@
 	vertical-align: baseline;
 }
 
-/* IMPORTANDO A FONTE DO GOOGLE FONTS */
-/*@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic+SC);*/
-/*@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);*/
-/*@import url(http://fonts.googleapis.com/css?family=Homenaje);*/
-
 @font-face {
 	font-family: Unit;
 	src: url("/fonts/NuvoWeb-Medi.woff") format("woff");
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: Bebas;
+	src: url("/fonts/Bebas.TTF") format("TrueType");
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url("/fonts/BebasNeue.otf") format("opentype");
+	font-weight: bold;
+}
+
 body {
-/*	font-family: 'Carrois Gothic SC', sans-serif; */
-/*	font-family: 'Hammersmith One', sans-serif;*/
-/*	font-family: 'Homenaje', sans-serif; */
 	position: relative;
 	background: url(/img/background.png) #f7f7f7;
 	font-family: Unit;
 }
 
 .blog-header, .blog-footer {
-	background-color: #388eb8;
 	box-sizing: border-box;
 	height: 90px;
 }
 
 .blog-header {
-	padding: 35px 0 0 13px;
-	border-bottom: 5px solid #facd31;
-	box-shadow: 0px 2px 10px #666;
+	width: 75%;
+	padding-top: 35px;
 	position: relative;
 	top: 0;
 	left: 0;
 	right: 0;
 }
 
+.post-card, .blog-header {
+	margin: 20px auto;
+}
+
 .blog-footer {
+	background-color: #388eb8;
 	border-top: 5px solid #facd31;
 	position: absolute;
 	bottom: 0;
@@ -51,7 +57,8 @@ body {
 }
 
 .blog-title {
-	text-shadow: 1px 0px 2px #fff;
+	font: 4em BebasNeue;
+	text-shadow: 2px 2px 1px #D1D1D1;
 	text-transform: uppercase;
 }
 
@@ -78,6 +85,7 @@ body {
 }
 
 .post-date {
+	font: 13px Unit;
 	color: #7a7a7a;
 	margin-bottom: 30px;
 }
@@ -91,6 +99,7 @@ body {
 }
 
 .post-title {
+	font: 28px BebasNeue;
 	margin-bottom: 5px;
 }
 
