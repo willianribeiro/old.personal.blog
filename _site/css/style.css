@@ -156,3 +156,16 @@ a.blog-title:hover {
 .my-contacts a:hover {
 	color: #666;	
 }
+
+a.read-more:link {
+	text-decoration: none;
+	margin-left: 8px;
+}
+
+a.read-more:visited{
+	color: blue;
+}
+
+a.read-more:hover {
+	color: #666666;
+}
