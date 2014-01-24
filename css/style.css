@@ -29,12 +29,12 @@
 }
 
 @font-face {
-	font-family: Gothic;
+	font-family: Century Gothic;
 	src: url("/fonts/Gothic.ttf") format("TrueType");
 }
 
 body {
-	font-family: Gothic;
+	font-family: Century Gothic, Arial, Helvetica;
 	line-height: 1.5em;
 	background: url(/img/background.png) #f7f7f7;
 }
