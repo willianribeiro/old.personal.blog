@@ -23,20 +23,21 @@
 	font-weight: bold;
 }
 
-
 @font-face {
 	font-family: GeosansLight;
 	src: url("/fonts/GeosansLight.ttf") format("TrueType");
 }
 
+@font-face {
+	font-family: Gothic;
+	src: url("/fonts/Gothic.ttf") format("TrueType");
+}
+
 body {
-	font-family: GeosansLight;
-	font-size: 20px;
+	font-family: Gothic;
 	line-height: 1.5em;
 	background: url(/img/background.png) #f7f7f7;
 }
-
-
 
 .main-content {
 	width: 100%;
@@ -123,10 +124,12 @@ a.blog-title:hover {
 }
 
 .post-paragraph {
+	font-size: 14px;
 	padding: 16px 30px;
 }
 
 .post-paragraph-index {
+	font-size: 16px;
 	padding: 30px 30px 25px;
 }
 
