@@ -114,7 +114,11 @@ a.blog-title:hover {
 }
 
 .post-paragraph {
-	margin: 33px 30px 0 30px;
+	padding: 16px 30px;
+}
+
+.post-paragraph-index {
+	padding: 30px 30px 25px;
 }
 
 .post-title {
