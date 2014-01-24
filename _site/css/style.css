@@ -24,9 +24,15 @@
 }
 
 body {
-	position: relative;
-	background: url(/img/background.png) #f7f7f7;
 	font-family: Unit;
+	background: url(/img/background.png) #f7f7f7;
+	//position: relative;
+}
+
+.main-content {
+	width: 100%;
+	margin: 80px 0;
+	position: relative;
 }
 
 .blog-header, .blog-footer {
@@ -36,30 +42,43 @@ body {
 
 .blog-header {
 	width: 75%;
-	padding-top: 35px;
+	margin: 80px auto 0 auto;
 	position: relative;
 	top: 0;
 	left: 0;
 	right: 0;
 }
 
-.post-card, .blog-header {
-	margin: 20px auto;
-}
-
 .blog-footer {
-	background-color: #388eb8;
-	border-top: 5px solid #facd31;
-	position: absolute;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
 	bottom: 0;
-	right: 0;
-	left: 0;
 }
 
-.blog-title {
-	font: 4em BebasNeue;
+a.blog-title {
+	font: 2em BebasNeue;
+	line-height: 55px;
 	text-shadow: 2px 2px 1px #D1D1D1;
 	text-transform: uppercase;
+}
+
+a.blog-title:link, a.blog-title:visited, a.blog-title:active {
+	color: #111;
+	text-decoration: none;
+}
+
+a.blog-title:hover {
+	color: #666;
+}
+
+.blog-subtitle {
+	font: 16px Unit;
+	text-transform: none;
+	margin-left: 171px;
+	display: block;
+	cursor: pointer;
 }
 
 .post-card {
@@ -103,6 +122,7 @@ body {
 	margin-bottom: 5px;
 }
 
+
 .post-title a:link {
 	color: #000;
 	text-decoration: none;
@@ -120,9 +140,19 @@ body {
 
 }
 
-.main-content {
-	position: relative;
-	width: 100%;
-	height: calc(100% - 180px);
-	margin-top: 80px;
+.my-contacts li {
+	display: inline-block;
+}
+
+.my-contacts .fa {
+	font-size: 28px;
+	margin-left: 13px;
+}
+
+.my-contacts a:link, .my-contacts a:visited, .my-contacts a:active  {
+	color: #111;
+}
+
+.my-contacts a:hover {
+	color: #666;	
 }
