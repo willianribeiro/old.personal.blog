@@ -7,7 +7,7 @@
 }
 
 @font-face {
-	font-family: Unit;
+	font-family: NuvoWeb-Medi;
 	src: url("/fonts/NuvoWeb-Medi.woff") format("woff");
 	font-weight: bold;
 }
@@ -23,11 +23,20 @@
 	font-weight: bold;
 }
 
-body {
-	font-family: Unit;
-	background: url(/img/background.png) #f7f7f7;
-	//position: relative;
+
+@font-face {
+	font-family: GeosansLight;
+	src: url("/fonts/GeosansLight.ttf") format("TrueType");
 }
+
+body {
+	font-family: GeosansLight;
+	font-size: 20px;
+	line-height: 1.5em;
+	background: url(/img/background.png) #f7f7f7;
+}
+
+
 
 .main-content {
 	width: 100%;
@@ -58,7 +67,7 @@ body {
 }
 
 a.blog-title {
-	font: 2em BebasNeue;
+	font: 64px BebasNeue;
 	line-height: 55px;
 	text-shadow: 2px 2px 1px #D1D1D1;
 	text-transform: uppercase;
@@ -74,7 +83,7 @@ a.blog-title:hover {
 }
 
 .blog-subtitle {
-	font: 16px Unit;
+	font: 16px NuvoWeb-Medi;
 	text-transform: none;
 	margin-left: 171px;
 	display: block;
@@ -104,7 +113,7 @@ a.blog-title:hover {
 }
 
 .post-date {
-	font: 13px Unit;
+	font: 13px NuvoWeb-Medi;
 	color: #7a7a7a;
 	margin-bottom: 30px;
 }
@@ -123,7 +132,6 @@ a.blog-title:hover {
 
 .post-title {
 	font: 28px BebasNeue;
-	margin-bottom: 5px;
 }
 
 
