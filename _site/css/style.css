@@ -24,11 +24,6 @@
 }
 
 @font-face {
-	font-family: GeosansLight;
-	src: url("/fonts/GeosansLight.ttf") format("TrueType");
-}
-
-@font-face {
 	font-family: Century Gothic;
 	src: url("/fonts/Gothic.ttf") format("TrueType");
 }
@@ -39,11 +34,6 @@ body {
 	background: url(/img/background.png) #f7f7f7;
 }
 
-.main-content {
-	width: 100%;
-	margin: 80px 0;
-	position: relative;
-}
 
 .blog-header, .blog-footer {
 	box-sizing: border-box;
@@ -89,6 +79,12 @@ a.blog-title:hover {
 	margin-left: 171px;
 	display: block;
 	cursor: pointer;
+}
+
+.main-content {
+	width: 100%;
+	margin: 80px 0;
+	position: relative;
 }
 
 .post-card {
@@ -150,10 +146,6 @@ a.blog-title:hover {
 
 .post-title a:visited {
 	color: #000;
-}
-
-.post-picture {
-
 }
 
 .my-contacts li {
