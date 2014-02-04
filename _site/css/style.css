@@ -6,6 +6,7 @@
 	vertical-align: baseline;
 }
 
+/* Importando as fontes */
 @font-face {
 	font-family: NuvoWeb-Medi;
 	src: url("/fonts/NuvoWeb-Medi.woff") format("woff");
@@ -28,14 +29,55 @@
 	src: url("/fonts/Gothic.ttf") format("TrueType");
 }
 
+
 body {
 	font-family: Century Gothic, Arial, Helvetica;
 	line-height: 1.5em;
 	background: url(/img/background.png) #f7f7f7;
 }
 
+/* Container principal */
+.main-content {
+	width: 100%;
+	margin: 80px 0;
+	position: relative;
+}
 
+/* Estilos para os links utilizados nas postagens */
+.link {
+	color: #666666;
+	text-decoration: none;
+	border-bottom: 1px dotted rgba(202, 200, 200, 0.68);
+}
+
+.link:hover {
+	color: #5A81FF;
+	border-bottom: 1px dotted #aaaaaa;
+}
+
+.link:after {
+	content: "\f08e";
+	color: #747171;
+	font: 8px FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	margin-left: 3px;
+	margin-right: 1px;
+	margin: 0 1px 0 3px;
+	top: -3px;
+	display: inline-block;
+}
+
+/* Estilos para o layout do blog */
 .blog-header, .blog-footer {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 90px;
 }
@@ -81,12 +123,7 @@ a.blog-title:hover {
 	cursor: pointer;
 }
 
-.main-content {
-	width: 100%;
-	margin: 80px 0;
-	position: relative;
-}
-
+/* Estilos para o card de postagem */
 .post-card {
 	background-color: rgba(255, 255, 255, 1);
 	width: 75%;
@@ -102,6 +139,12 @@ a.blog-title:hover {
 	padding: 30px 30px 35px 30px;
 }
 
+.post-date {
+	font: 13px NuvoWeb-Medi;
+	color: #7a7a7a;
+	margin-bottom: 30px;
+}
+
 .post-img {
 	width: 100%;
 	height: 160px;
@@ -110,19 +153,21 @@ a.blog-title:hover {
 	display: block;
 }
 
-.post-date {
-	font: 13px NuvoWeb-Medi;
-	color: #7a7a7a;
-	margin-bottom: 30px;
-}
-
 .post-description {
 
 }
 
 .post-paragraph {
 	font-size: 14px;
-	padding: 16px 30px;
+	padding: 16px 30px 4px 30px;
+}
+
+.post-paragraph:first-of-type {
+	padding-top: 25px;
+}
+
+.post-paragraph:last-of-type {
+	padding-bottom: 40px;
 }
 
 .post-paragraph-index {
@@ -133,7 +178,6 @@ a.blog-title:hover {
 .post-title {
 	font: 28px BebasNeue;
 }
-
 
 .post-title a:link {
 	color: #000;
@@ -148,6 +192,20 @@ a.blog-title:hover {
 	color: #000;
 }
 
+a.read-more:link {
+	text-decoration: none;
+	margin-left: 8px;
+}
+
+a.read-more:visited{
+	color: blue;
+}
+
+a.read-more:hover {
+	color: #666666;
+}
+
+/* Estilos para os links de redes sociais */
 .my-contacts li {
 	display: inline-block;
 }
@@ -165,22 +223,11 @@ a.blog-title:hover {
 	color: #666;	
 }
 
-a.read-more:link {
-	text-decoration: none;
-	margin-left: 8px;
-}
-
-a.read-more:visited{
-	color: blue;
-}
-
-a.read-more:hover {
-	color: #666666;
-}
-
+/* Estilo para a api de comentário "disqus" */
 .disqus-wrapper {
 	padding: 15px;
 	width: 67%;
+	max-width: 898px;
 	margin: 35px auto 0 auto;
 	border: 1px solid #d1d1d1;
 	border-radius: 3px;
